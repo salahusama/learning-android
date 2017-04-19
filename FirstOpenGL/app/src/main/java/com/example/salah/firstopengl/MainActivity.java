@@ -1,23 +1,34 @@
 package com.example.salah.firstopengl;
 
+import android.app.Activity;
 import android.content.Context;
+import android.opengl.EGLConfig;
+import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
-import android.support.v7.app.AppCompatActivity;
+import android.opengl.GLSurfaceView.Renderer;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import javax.microedition.khronos.opengles.GL10;
+
+public class MainActivity extends Activity {
+
+    private GLSurfaceView mGLView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+
+        // Create a GLSurfaceView instance and set it
+        // as the ContentView for this Activity.
+        mGLView = new MyGLSurfaceView(this);
+        setContentView(mGLView);
     }
 
     class MyGLSurfaceView extends GLSurfaceView {
 
         private final MyGLRenderer mRenderer;
 
-        public MyGLSurfaceView(Context context){
+        public MyGLSurfaceView(Context context) {
             super(context);
 
             // Create an OpenGL ES 2.0 context
@@ -29,6 +40,5 @@ public class MainActivity extends AppCompatActivity {
             setRenderer(mRenderer);
         }
     }
-
-
 }
+
