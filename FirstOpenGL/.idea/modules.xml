@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FirstOpenGL.iml" filepath="$PROJECT_DIR$/FirstOpenGL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FirstOpenglApp.iml" filepath="$PROJECT_DIR$/FirstOpenglApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
