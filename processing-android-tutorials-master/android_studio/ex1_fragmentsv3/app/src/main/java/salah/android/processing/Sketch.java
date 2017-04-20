@@ -1,20 +1,19 @@
-package com.example.salah.processingandroid;
-
-/**
- * Created by salah on 20/04/17.
- */
+package salah.android.processing;
 
 import processing.core.PApplet;
 
 public class Sketch extends PApplet {
     public void settings() {
-        size(600, 600);
+        fullScreen();
     }
 
     public void setup() { }
 
     public void draw() {
+        background(0);
         if (mousePressed) {
+            noStroke();
+            fill(255);
             ellipse(mouseX, mouseY, 50, 50);
         }
     }

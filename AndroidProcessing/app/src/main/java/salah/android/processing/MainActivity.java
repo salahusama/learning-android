@@ -1,4 +1,4 @@
-package com.example.salah.processingandroid;
+package salah.android.processing;
 
 import android.os.Bundle;
 import android.app.Activity;
