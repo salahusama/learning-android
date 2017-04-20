@@ -14,6 +14,6 @@ public class Ship{
     }
 
     public void display() {
-        ellipse(x, y, 50f, 50f);
+        //ellipse(x, y, 50f, 50f);
     }
 }
